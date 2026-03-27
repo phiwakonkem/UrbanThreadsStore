@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  color: white;
+  min-height: 100vh;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.product-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 15px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.85;
+}
+
+/* CART */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 10px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+/* Inputs */
+input, select {
+    border-radius: 10px;
+    border: none;
+}
