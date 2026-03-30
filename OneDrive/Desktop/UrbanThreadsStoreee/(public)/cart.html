@@ -10,19 +10,20 @@
         
             <div>
                 <a href="shop.html">Shop</a>
-                <a href="login.html">Login</a>
             </div>
         </nav>
 
-        <h1 style="padding:20px;">Your Cart</h1>
+        <div id="cart-details">
+            <h1 style="padding:20px;">Your Cart</h1>
 
-        <div id="cart"></div>
+            <div id="cart"></div>
 
-        <h2 id="total" style="padding:20px;"></h2>
+            <h2 id="total" style="padding:20px;"></h2>
 
-        <button onclick="checkout()" style="margin:20px;">
-            Proceed to Checkout
-        </button>
+            <button id="checkout-btn" onclick="checkout()" style="margin:20px;">
+                Proceed to Checkout
+            </button>
+        </div>
 
         <script type="module" src="js/cart.js"></script>
     </body>

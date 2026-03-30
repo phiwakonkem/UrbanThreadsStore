@@ -30,6 +30,9 @@ function removeFromCart(id) {
 }
 
 function displayCart() {
+
+  if (!container || !totalEl) return;
+
   container.innerHTML = "";
   let total = 0;
 
@@ -54,8 +57,11 @@ function displayCart() {
 }
 
 window.removeFromCart = removeFromCart;
+window.addToCart = addToCart;
 
-displayCart();
+if (document.getElementById("cart")) {
+  displayCart();
+}
 
 window.checkout = function () {
   if (cart.length === 0) {
