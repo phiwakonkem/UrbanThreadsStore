@@ -14,7 +14,12 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/12.11.0/firebas
   };
 
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+  let analytics;
+  try {
+    analytics = getAnalytics(app);
+  } catch (e) {
+    console.log("Analytics not supported");
+  }  
 
   export const auth = getAuth(app);
   export const db = getFirestore(app);
